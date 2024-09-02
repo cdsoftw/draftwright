@@ -2,10 +2,12 @@ import { expect, type Locator, type Page } from '@playwright/test';
 
 export class YahooDraftLoadingPage {
     private readonly page: Page;
+    private readonly countdownLocator: Locator;
     private readonly draftLoadingHeader: Locator;
 
     constructor(page: Page) {
         this.page = page;
+        this.countdownLocator = page.locator('#waiting_room-countdown');
         this.draftLoadingHeader = page.getByRole('heading', { name: 'Draft is now loading' });
     }
 
@@ -14,31 +16,39 @@ export class YahooDraftLoadingPage {
         console.log('Waiting for draft to finish loading...');
         await expect(this.draftLoadingHeader).not.toBeVisible({ timeout: 60000 });
         await expect(this.page).not.toHaveURL(/.*waiting.*/);
-        await this.page.pause();
     }
 
     private async waitForCountdown() {
-        const countdown = await this.getCountdownInSeconds();
-        if (!countdown) return;
+        try {
+            await this.countdownLocator.waitFor({ timeout: 5000 });
+        } catch {
+            console.warn('No draft countdown found!');
+            return;
+        }
 
-        console.log(`Waiting for ${countdown} second countdown to complete...`);
-        await this.draftLoadingHeader.waitFor({ timeout: (countdown + 5) * 1000 });
+        let humanizedCoundownTxt: string | undefined = undefined;
+        const countdownTxt = await this.countdownLocator.textContent();
+        if (countdownTxt) {
+            const colonIdx = countdownTxt.indexOf(':');
+            if (colonIdx) {
+                humanizedCoundownTxt = countdownTxt.substring(colonIdx - 2, colonIdx + 3);
+            }
+        }
+
+        const countdownSec = await this.getCountdownInSeconds();
+        if (!countdownSec) return;
+        console.log(
+            `Waiting for ${humanizedCoundownTxt ?? countdownSec + ' second'} countdown to complete...`
+        );
+
+        await this.draftLoadingHeader.waitFor({ timeout: (countdownSec + 5) * 1000 });
     }
 
     private async getCountdownInSeconds(): Promise<number> {
-        const countdownLocator = this.page.locator('#waiting_room-countdown');
-
-        try {
-            await countdownLocator.waitFor();
-        } catch {
-            console.warn('No draft countdown found!');
-            return NaN;
-        }
-
-        const num10MinsStr = await countdownLocator.locator('#minutes-10').textContent();
-        const numMinsStr = await countdownLocator.locator('#minutes-1').textContent();
-        const num10SecsStr = await countdownLocator.locator('#seconds-10').textContent();
-        const numSecsStr = await countdownLocator.locator('#seconds-10').textContent();
+        const num10MinsStr = await this.countdownLocator.locator('#minutes-10').textContent();
+        const numMinsStr = await this.countdownLocator.locator('#minutes-1').textContent();
+        const num10SecsStr = await this.countdownLocator.locator('#seconds-10').textContent();
+        const numSecsStr = await this.countdownLocator.locator('#seconds-1').textContent();
 
         if (
             !num10MinsStr?.trim() ||
@@ -46,6 +56,7 @@ export class YahooDraftLoadingPage {
             !num10SecsStr?.trim() ||
             !numSecsStr?.trim()
         ) {
+            console.warn('Countdown text parsing failed!');
             return NaN;
         }
 

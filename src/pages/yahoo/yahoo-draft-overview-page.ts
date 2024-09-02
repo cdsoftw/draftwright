@@ -13,9 +13,15 @@ export class YahooDraftOverviewPage {
         this.context = context;
         this.page = page;
         this.signInButton = page.getByRole('link', { name: 'Sign In' }).last();
-        this.joinDraftButton = page.getByRole('button', {
-            name: `${this.numberOfTeams.toString()} Team`,
-        });
+        this.joinDraftButton = page
+            .getByRole('button', {
+                name: `${this.numberOfTeams.toString()} Team`,
+            })
+            .or(
+                page.getByRole('link', {
+                    name: 'Launch Draft App',
+                })
+            );
     }
 
     async goto() {

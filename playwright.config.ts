@@ -27,6 +27,7 @@ export default defineConfig({
         trace: 'on-first-retry',
 
         viewport: null,
+        permissions: ['notifications'],
     },
 
     /* Glob patterns or regular expressions that match test files. */
