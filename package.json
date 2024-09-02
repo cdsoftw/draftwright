@@ -14,5 +14,8 @@
         "@playwright/test": "^1.46.1",
         "@types/node": "^22.5.1",
         "prettier": "3.3.3"
+    },
+    "dependencies": {
+        "fast-csv": "^5.0.1"
     }
 }
