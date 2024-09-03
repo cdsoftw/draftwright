@@ -160,7 +160,8 @@ export class YahooDraftPage {
                         );
 
                         await this.page.waitForTimeout(2000);
-                        continue;
+                        let prevPick = await this.getLastPick();
+                        if (!this.pickCell || prevPick == '') continue;
                     }
 
                     await this.ensureResultsTabSelected();
