@@ -1,6 +1,7 @@
 import { expect, type Locator, type Page, type BrowserContext } from '@playwright/test';
 
 export class YahooDraftOverviewPage {
+    // public readonly relativeUrl = '/';
     public readonly relativeUrl = '/f1/mock_lobby';
 
     private readonly context: BrowserContext;
@@ -14,10 +15,15 @@ export class YahooDraftOverviewPage {
         this.page = page;
         this.signInButton = page.getByRole('link', { name: 'Sign In' }).last();
         this.joinDraftButton = page
-            .getByRole('button', {
-                name: `${this.numberOfTeams.toString()} Team`,
-            })
+            .getByRole('link', { name: 'Enter Live Draft' }) // real draft
             .or(
+                // new mock draft
+                page.getByRole('button', {
+                    name: `${this.numberOfTeams.toString()} Team`,
+                })
+            )
+            .or(
+                // existing mock draft
                 page.getByRole('link', {
                     name: 'Launch Draft App',
                 })
