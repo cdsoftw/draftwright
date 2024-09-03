@@ -2,6 +2,7 @@ import { test, expect } from './fixtures';
 import { YahooDraftOverviewPage } from './pages/yahoo/yahoo-draft-overview-page';
 import { YahooLoginPage } from './pages/yahoo/yahoo-login-page';
 import { YahooDraftLoadingPage } from './pages/yahoo/yahoo-draft-loading-page';
+import { YahooDraftPage } from './pages/yahoo/yahoo-draft-page';
 
 test('perform draft', async ({ context }) => {
     context.setDefaultTimeout(5000);
@@ -21,5 +22,9 @@ test('perform draft', async ({ context }) => {
     const loadingPage = new YahooDraftLoadingPage(newPage);
     await loadingPage.waitForDraftToLoad();
 
-    // TODO: do actual draft
+    const draftPage = new YahooDraftPage(newPage);
+    await draftPage.closeAd();
+    await draftPage.waitForPage();
+    await draftPage.doDraft();
+    await newPage.pause(); // user must advance in the debug window to exit
 });
