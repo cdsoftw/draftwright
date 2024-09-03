@@ -11,11 +11,12 @@
     "license": "ISC",
     "description": "A Playwright-based browser automation tool that is intended to help with fantasy sports drafts.",
     "devDependencies": {
-        "@playwright/test": "^1.46.1",
         "@types/node": "^22.5.1",
         "prettier": "3.3.3"
     },
     "dependencies": {
-        "fast-csv": "^5.0.1"
-    }
+        "@playwright/test": "^1.46.1",
+        "csv": "^6.3.10"
+    },
+    "repository": "https://github.com/cdsoftw/draftwright.git"
 }
