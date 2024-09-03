@@ -260,7 +260,7 @@ export class YahooDraftPage {
         let pick = await this.pickCell.innerText();
         expect(pick).not.toEqual('');
 
-        let teamPosStr = pick.match(/[A-Z]{1,3}[a-z]{0,3}-\s[A-Z,]{1,5}$/)?.at(0); // 'Mia- WR', 'NYG- RB', 'LV- K', etc.
+        let teamPosStr = pick.match(/[A-Z]{1,3}[a-z]{0,2}-\s[A-Z,]{1,5}$/)?.at(0); // 'Mia- WR', 'NYG- RB', 'LV- K', etc.
         if (!teamPosStr) teamPosStr = pick.match(/\s-\sDEF/)?.at(0); // - DEF
         if (teamPosStr) pick = pick.replace(teamPosStr, '');
 
