@@ -31,7 +31,7 @@ export class YahooDraftOverviewPage {
     }
 
     async waitForPage(timeoutinSec?: number) {
-        expect(this.signInButton.or(this.joinDraftButton)).toBeVisible({
+        await expect(this.signInButton.or(this.joinDraftButton)).toBeVisible({
             timeout: (timeoutinSec ?? 5) * 1000,
         });
     }
