@@ -35,6 +35,7 @@ enum Position {
 
 class CliDraftDriver {
     private rl: readline.Interface;
+    private currentPick: number = 1;
 
     constructor() {
         this.rl = readline.createInterface({
@@ -60,37 +61,40 @@ class CliDraftDriver {
     }
 
     private promptUser() {
-        this.rl.question('\nEnter command or player name: ', async (input) => {
-            const command = input.trim().toLowerCase();
+        this.rl.question(
+            `\n📋 Pick #${this.currentPick} - Enter command or player name: `,
+            async (input) => {
+                const command = input.trim().toLowerCase();
 
-            if (command === 'quit' || command === 'exit') {
-                console.log('Draft complete! Good luck with your season! 🏆');
-                this.rl.close();
-                return;
-            }
-
-            if (command === 'top5') {
-                await this.showTop5Overall();
-            } else if (command.endsWith('5')) {
-                if (command.length < 2 || command.length > 4) {
-                    console.log("Invalid position command. Please use 'pos5' format.");
-                    this.promptUser();
+                if (command === 'quit' || command === 'exit') {
+                    console.log('Draft complete! Good luck with your season! 🏆');
+                    this.rl.close();
                     return;
                 }
 
-                const position = command.slice(0, -1);
-                if (position.toUpperCase() in Position) {
-                    await this.showTop5Position(position);
-                } else {
-                    console.log("Invalid position command. Please use 'pos5' format.");
-                }
-            } else {
-                // Treat as player name to remove
-                await this.removePlayer(input.trim());
-            }
+                if (command === 'top5') {
+                    await this.showTop5Overall();
+                } else if (command.endsWith('5')) {
+                    if (command.length < 2 || command.length > 4) {
+                        console.log("Invalid position command. Please use 'pos5' format.");
+                        this.promptUser();
+                        return;
+                    }
 
-            this.promptUser();
-        });
+                    const position = command.slice(0, -1);
+                    if (position.toUpperCase() in Position) {
+                        await this.showTop5Position(position);
+                    } else {
+                        console.log("Invalid position command. Please use 'pos5' format.");
+                    }
+                } else {
+                    // Treat as player name to remove
+                    await this.removePlayer(input.trim());
+                }
+
+                this.promptUser();
+            }
+        );
     }
 
     private async askForConfirmation(message: string): Promise<boolean> {
@@ -133,6 +137,7 @@ class CliDraftDriver {
 
                 if (success) {
                     console.log(`✅ "${player['PLAYER NAME']}" has been removed from rankings.`);
+                    this.currentPick++;
                     await this.showTop5Overall();
                 } else {
                     console.log(`❌ Failed to remove "${player['PLAYER NAME']}".`);
@@ -202,6 +207,7 @@ class CliDraftDriver {
                         console.log(
                             `✅ "${selectedPlayer['PLAYER NAME']}" has been removed from rankings.`
                         );
+                        this.currentPick++;
                         await this.showTop5Overall();
                     } else {
                         console.log(`❌ Failed to remove "${selectedPlayer['PLAYER NAME']}".`);
@@ -237,7 +243,7 @@ class CliDraftDriver {
 
             const top5 = players.slice(0, 5);
             top5.forEach((player, index) => {
-                const rank = (index + 1).toString().padEnd(4);
+                const rank = player.RK.toString().padEnd(4);
                 const tier = player.TIERS.toString().padEnd(4);
                 const name = player['PLAYER NAME'].padEnd(25);
                 const team = player.TEAM.padEnd(4);
@@ -283,7 +289,7 @@ class CliDraftDriver {
 
             const top5 = players.slice(0, 5);
             top5.forEach((player, index) => {
-                const rank = (index + 1).toString().padEnd(4);
+                const rank = player.RK.toString().padEnd(4);
                 const tier = player.TIERS.toString().padEnd(4);
                 const name = player['PLAYER NAME'].padEnd(25);
                 const team = player.TEAM.padEnd(4);
