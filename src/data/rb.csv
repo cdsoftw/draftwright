@@ -1,166 +1,144 @@
-RK,TIERS,PLAYER NAME,TEAM,BYE WEEK,BEST,WORST,AVG.,STD.DEV,ECR VS. ADP
-1,1,Bijan Robinson,ATL,5,1,3,1.3,0.5,0
-2,1,Jahmyr Gibbs,DET,8,1,3,2.3,0.6,1
-3,1,Saquon Barkley,PHI,9,1,5,2.6,1,-1
-4,2,Christian McCaffrey,SF,14,3,9,4.9,1.7,0
-5,2,Derrick Henry,BAL,7,4,7,5.3,1,0
-6,2,Ashton Jeanty,LV,8,4,9,5.6,1.3,0
-7,2,Jonathan Taylor,IND,11,6,11,8.1,1.4,2
-8,2,De'Von Achane,MIA,12,6,11,8.1,1.7,0
-9,2,Bucky Irving,TB,9,5,12,9.2,1.6,1
-10,3,Josh Jacobs,GB,5,7,11,9.4,1,-3
-11,3,Chase Brown,CIN,10,7,13,9.9,1.8,0
-12,3,Kyren Williams,LAR,8,9,16,11.9,1.3,0
-13,3,Omarion Hampton,LAC,12,12,17,13.7,1.2,1
-14,3,James Cook,BUF,7,12,17,14,1.5,-1
-15,4,Kenneth Walker III,SEA,8,14,22,16.3,2.2,2
-16,4,Alvin Kamara,NO,11,14,22,16.6,2,-1
-17,4,Breece Hall,NYJ,9,12,20,17,2.1,-1
-18,4,Chuba Hubbard,CAR,14,15,23,18.3,1.9,0
-19,4,TreVeyon Henderson,NE,14,14,22,18.6,2.4,1
-20,4,James Conner,ARI,8,15,25,19.1,2.1,-1
-21,4,Tony Pollard,TEN,10,17,27,21.3,2.3,2
-22,4,RJ Harvey,DEN,12,19,29,23.1,2.5,-1
-23,4,D'Andre Swift,CHI,5,19,29,23.1,1.9,1
-24,4,David Montgomery,DET,8,20,28,23.3,2.1,-2
-25,4,Isiah Pacheco,KC,10,19,28,24.3,1.9,0
-26,4,Aaron Jones Sr.,MIN,6,21,28,25,1.6,0
-27,5,Tyrone Tracy Jr.,NYG,14,25,32,28,1.6,1
-28,5,Jaylen Warren,PIT,5,26,34,29,2.1,1
-29,5,Kaleb Johnson,PIT,5,24,52,29.4,4.8,-2
-30,5,Jordan Mason,MIN,6,27,36,30.7,1.9,0
-31,5,Zach Charbonnet,SEA,8,27,41,32.9,2.9,3
-32,5,Travis Etienne Jr.,JAC,8,29,42,34.3,3.4,0
-33,5,J.K. Dobbins,DEN,12,29,53,34.6,5.1,2
-34,5,Javonte Williams,DAL,10,31,44,35.8,3.5,7
-35,5,Jacory Croskey-Merritt,WAS,12,29,60,36.7,6.5,-2
-36,6,Austin Ekeler,WAS,12,30,52,37.6,5.7,6
-37,6,Cam Skattebo,NYG,14,30,57,39.6,6,0
-38,6,Rhamondre Stevenson,NE,14,33,50,39.7,3.7,5
-39,6,Tank Bigsby,JAC,8,33,48,39.8,3.5,0
-40,6,Braelon Allen,NYJ,9,34,56,42.1,5.4,0
-41,6,Trey Benson,ARI,8,33,55,43.4,4.8,7
-42,6,Ray Davis,BUF,7,37,53,45.6,4.6,9
-43,6,Nick Chubb,HOU,6,38,68,45.8,6.6,1
-44,6,Najee Harris,LAC,12,38,54,46.3,4,1
-45,6,Rachaad White,TB,9,36,61,46.4,6.2,7
-46,6,Jaydon Blue,DAL,10,36,57,46.8,5.6,0
-47,6,Bhayshul Tuten,JAC,8,36,60,46.8,6.2,2
-48,6,Quinshon Judkins,CLE,9,24,75,47.4,10.4,-10
-49,6,Jerome Ford,CLE,9,39,64,49,7.2,1
-50,6,Tyjae Spears,TEN,10,37,64,49.1,6.9,6
-51,6,Dylan Sampson,CLE,9,38,72,49.2,7.6,2
-52,6,Brian Robinson Jr.,SF,14,31,68,49.3,8.3,-16
-53,6,Tyler Allgeier,ATL,5,43,63,50.3,3.9,4
-54,7,Joe Mixon,HOU,6,27,89,54.1,12.4,-23
-55,7,Rico Dowdle,CAR,14,47,70,55.9,5.8,0
-56,7,Woody Marks,HOU,6,46,71,60.7,6.6,4
-57,7,Roschon Johnson,CHI,5,51,79,60,7.6,12
-58,7,Will Shipley,PHI,9,49,92,60.6,7.6,3
-59,7,Ollie Gordon II,MIA,12,37,92,57.8,12.3,-12
-60,7,Blake Corum,LAR,8,55,75,62.2,5.8,4
-61,7,Jaylen Wright,MIA,12,50,80,62.9,7.3,-2
-62,7,Kyle Monangai,CHI,5,51,81,66.2,7.7,0
-63,7,Kendre Miller,NO,11,55,81,66.2,5.5,4
-64,7,Chris Rodriguez Jr.,WAS,12,50,114,70,16.8,8
-65,7,Isaac Guerendo,SF,14,40,80,63.2,10.4,-7
-66,7,Dameon Pierce,HOU,6,49,90,70.3,11.2,9
-67,7,Kareem Hunt,KC,10,56,85,68.6,7.7,-13
-68,7,Justice Hill,BAL,7,53,92,66.9,8.8,-2
-69,8,DJ Giddens,IND,11,55,79,64.9,6.5,-4
-70,8,Miles Sanders,DAL,10,57,92,68.9,7.3,1
-71,8,Tahj Brooks,CIN,10,55,88,67.7,8.2,-3
-72,8,MarShawn Lloyd,GB,5,58,92,71.6,8.4,9
-73,8,Jarquez Hunter,LAR,8,64,84,72.5,5.1,1
-74,8,Keaton Mitchell,BAL,7,54,92,70.7,8.3,-11
-75,8,Devin Neal,NO,11,64,95,78.6,8.7,3
-76,8,Sean Tucker,TB,9,61,93,73.7,7.7,7
-77,8,Brashard Smith,KC,10,54,94,70.7,8.8,-7
-78,8,Trevor Etienne,CAR,14,63,109,81.3,10,8
-79,8,Raheem Mostert,LV,8,71,88,78.5,5.2,-6
-80,8,Kenneth Gainwell,PIT,5,65,105,79.3,8,4
-81,8,Elijah Mitchell,KC,10,65,97,80.3,7.1,4
-82,8,Isaiah Davis,NYJ,9,68,106,83.3,8.9,-
-83,8,Ty Johnson,BUF,7,62,104,80.7,9.3,-
-84,8,Jaleel McLaughlin,DEN,12,68,103,82,7.9,7
-85,8,Devin Singletary,NYG,14,73,101,82.6,5.7,4
-86,8,Jordan James,SF,14,65,108,84.1,9.3,2
-87,8,Antonio Gibson,NE,14,75,110,86.1,7.1,-8
-88,8,Emanuel Wilson,GB,5,67,97,85,8.7,4
-89,9,Chris Brooks,GB,5,74,123,90.9,10.3,-
-90,9,Samaje Perine,CIN,10,73,111,90.3,9.5,-
-91,9,A.J. Dillon,PHI,9,79,107,91.7,7.7,-15
-92,9,Zamir White,LV,8,85,112,97.3,7.3,-
-93,9,Ty Chandler,MIN,6,89,123,97.6,9,-
-94,9,Phil Mafah,DAL,10,80,108,93.8,7.4,-
-95,9,Kalel Mullings,TEN,10,81,108,94.1,6.8,-
-96,9,Damien Martinez,SEA,8,87,103,95,4.6,-
-97,9,Khalil Herbert,FA,-,69,107,92,9.6,-
-98,9,Audric Estime,PHI,9,72,111,92.7,12.7,-4
-99,9,LeQuint Allen Jr.,JAC,8,86,112,97.4,7.3,-
-100,9,Raheim Sanders,CLE,9,71,147,105.2,18.2,-
-101,9,Kimani Vidal,LAC,12,88,137,97.8,12.1,-
-102,9,Emari Demercado,ARI,8,93,118,101.9,8.1,-
-103,9,Sincere McCormick,SF,14,88,151,103.3,16.1,-
-104,9,Dare Ogunbowale,HOU,6,95,126,104.2,8.7,-
-105,9,Julius Chestnut,TEN,10,94,126,107,9.5,-
-106,9,Jeremy McNichols,WAS,12,95,112,103.6,5.1,-
-107,9,Kyle Juszczyk,SF,14,83,114,97.9,11.3,-
-108,10,Alec Ingold,MIA,12,88,128,108.9,10.6,-
-109,10,Craig Reynolds,DET,8,98,121,108.9,8,-
-110,10,Hassan Haskins,LAC,12,96,140,112.1,14.9,-
-111,10,Tyler Goodson,IND,11,93,150,113.1,15.3,-
-112,10,Zack Moss,FA,-,89,136,104.4,14,-
-113,10,George Holani,SEA,8,93,153,104.9,18.4,-
-114,10,Gus Edwards,FA,-,98,117,106.5,7,-
-115,10,Tyler Badie,DEN,12,101,126,113.9,8.1,-
-116,10,Trey Sermon,PIT,5,106,150,120.2,11.6,-
-117,10,Sione Vaki,DET,8,107,133,120.6,7.4,-
-118,10,Clyde Edwards-Helaire,KC,10,103,158,123.8,14.7,-
-119,10,Cam Akers,FA,-,98,179,115.7,28.7,-
-120,10,Jamaal Williams,FA,-,79,123,104.2,17.9,-
-121,10,Rasheen Ali,BAL,7,108,123,115.7,5.8,-
-122,10,Carson Steele,KC,10,91,145,117.3,20.3,-
-123,10,Eric Gray,NYG,14,106,140,122.2,11,-
-124,10,Dylan Laube,LV,8,109,137,123,10.3,-
-125,10,Hunter Luepke,DAL,10,105,174,124.8,23.2,-
-126,10,Pierre Strong Jr.,FA,-,102,130,115.6,10.7,-
-127,10,Michael Carter,ARI,8,86,131,115.8,16,-
-128,10,D'Ernest Johnson,FA,-,119,138,128,5.5,-
-129,10,Corey Kiner,SF,14,116,131,121.6,5.2,-
-130,10,Ja'Quinden Jackson,JAC,8,110,127,122.2,6.5,-
-131,10,Cordarrelle Patterson,FA,-,103,117,111.5,5.4,-
-132,10,Jonathon Brooks,CAR,14,112,154,124.4,15.7,-
-133,10,Marcus Yarns,FA,-,115,130,124.4,6.2,-
-134,10,Patrick Ricard,BAL,7,114,143,125,9.7,-
-135,10,Jeff Wilson Jr.,MIA,12,119,138,125.6,7.2,-
-136,11,Donovan Edwards,WAS,12,104,162,128.4,18.7,-
-137,11,C.J. Ham,MIN,6,113,133,122,7.3,-
-138,11,Deuce Vaughn,FA,-,121,130,125.5,3.2,-
-139,11,Troy Hairston II,FA,-,78,86,82,4,-
-140,11,Josh Williams,TB,9,111,168,127.8,23.5,-
-141,11,Kene Nwangwu,NYJ,9,110,152,129.8,15.6,-
-142,11,Ronnie Rivers,LAR,8,122,161,140,15.3,-
-143,11,Carlos Washington Jr.,ATL,5,109,134,119,10.8,-
-144,11,DeeJay Dallas,CAR,14,106,156,133,19.4,-
-145,11,Ezekiel Elliott,FA,-,96,106,101,5,-
-146,11,Chris Tyree,NO,11,116,129,124.7,6.1,-
-147,11,D'Onta Foreman,FA,-,122,129,125,2.9,-
-148,11,Jawhar Jordan,HOU,6,129,164,138.3,14.9,-
-149,11,Jase McClellan,FA,-,97,114,105.5,8.5,-
-150,11,Nyheim Miller-Hines,LAC,12,123,145,130.3,10.4,-
-151,11,Tony Jones Jr.,FA,-,111,113,112,1,-
-152,11,Dalvin Cook,FA,-,114,116,115,1,-
-153,11,Keaontay Ingram,KC,10,120,165,137.3,19.8,-
-154,11,Tre Stewart,FA,-,117,139,128,11,-
-155,11,Jordan Mims,TEN,10,107,163,135,28,-
-156,12,Trayveon Williams,CLE,9,143,144,143.5,0.5,-
-157,12,Frank Gore Jr.,BUF,7,122,169,145.5,23.5,-
-158,12,Israel Abanikanda,GB,5,141,156,148.5,7.5,-
-159,12,Cody Schrader,LAR,8,142,157,149.5,7.5,-
-160,12,Raheem Blackshear,FA,-,148,167,157.5,9.5,-
-161,12,Lew Nichols III,PIT,5,149,168,158.5,9.5,-
-162,12,Blake Watson,FA,-,151,170,160.5,9.5,-
-163,12,Montrell Johnson Jr.,FA,-,159,162,160.5,1.5,-
-164,12,Tyrion Davis-Price,FA,-,158,164,161,3,-
-165,12,Dante Miller,NYG,14,166,176,171,5,-
+"RK",TIERS,"PLAYER NAME",TEAM,"BEST","WORST","AVG.","STD.DEV","ECR VS. ADP"
+"1",1,"Jahmyr Gibbs",DET,"1","2","1.1","0.2","0"
+"2",1,"Bijan Robinson",ATL,"1","2","1.9","0.2","0"
+"3",1,"Jonathan Taylor",IND,"3","6","4.0","0.8","+1"
+"4",1,"Christian McCaffrey",SF,"3","9","4.1","1.6","-1"
+"5",2,"James Cook III",BUF,"3","8","4.7","1.0","0"
+"6",2,"Saquon Barkley",PHI,"6","11","7.5","1.4","0"
+"7",2,"Chase Brown",CIN,"5","12","7.6","1.9","+1"
+"8",2,"De'Von Achane",MIA,"4","14","8.8","2.1","-1"
+"9",3,"Kenneth Walker III",KC,"6","19","9.3","2.6","0"
+"10",3,"Omarion Hampton",LAC,"3","13","9.8","2.4","0"
+"11",3,"Derrick Henry",BAL,"6","13","9.8","1.7","0"
+"12",3,"Ashton Jeanty",LV,"7","19","11.2","2.3","0"
+"13",3,"Kyren Williams",LAR,"9","18","13.8","2.0","0"
+"14",3,"Javonte Williams",DAL,"10","20","14.1","1.9","+1"
+"15",3,"Breece Hall",NYJ,"12","18","15.0","1.3","+1"
+"16",4,"Jeremiyah Love",ARI,"13","24","16.4","2.9","-2"
+"17",4,"Travis Etienne Jr.",NO,"14","20","17.3","1.4","0"
+"18",4,"D'Andre Swift",CHI,"15","24","18.3","1.9","+1"
+"19",4,"Bucky Irving",TB,"15","26","20.2","2.5","+1"
+"20",4,"Cam Skattebo",NYG,"15","28","20.5","2.5","-2"
+"21",4,"David Montgomery",HOU,"18","27","21.1","2.4","+1"
+"22",4,"Quinshon Judkins",CLE,"15","27","21.7","2.3","-1"
+"23",4,"Jadarian Price",SEA,"17","30","23.7","3.0","0"
+"24",4,"Bhayshul Tuten",JAC,"20","34","24.3","2.9","0"
+"25",4,"TreVeyon Henderson",NE,"18","30","24.5","2.7","0"
+"26",5,"Rhamondre Stevenson",NE,"23","33","27.0","2.4","+1"
+"27",5,"Jaylen Warren",PIT,"25","33","27.3","2.0","+1"
+"28",5,"Rico Dowdle",PIT,"25","35","29.8","2.8","+1"
+"29",5,"Tony Pollard",TEN,"26","34","30.0","1.9","+1"
+"30",5,"Jonathon Brooks",CAR,"25","49","31.0","4.6","+2"
+"31",5,"MarShawn Lloyd",GB,"23","57","31.5","6.8","+2"
+"32",5,"J.K. Dobbins",DEN,"27","39","33.2","2.7","+3"
+"33",5,"Blake Corum",LAR,"28","42","33.5","3.2","+3"
+"34",5,"Chuba Hubbard",CAR,"28","43","33.8","3.2","0"
+"35",5,"RJ Harvey",DEN,"29","44","35.3","3.9","-4"
+"36",5,"Jordan Mason",MIN,"28","44","35.8","3.9","+1"
+"37",5,"Jacory Croskey-Merritt",WAS,"28","41","36.2","3.0","+1"
+"38",6,"Kenny Gainwell",TB,"30","44","38.4","3.0","+2"
+"39",6,"Kyle Monangai",CHI,"34","49","38.9","2.9","0"
+"40",6,"Rachaad White",WAS,"36","47","40.1","2.7","+2"
+"41",6,"Aaron Jones Sr.",MIN,"33","48","40.7","3.5","+2"
+"42",6,"Chris Rodriguez Jr.",JAC,"32","51","42.5","4.0","+2"
+"43",6,"Woody Marks",HOU,"38","51","44.0","3.0","+2"
+"44",6,"Tyler Allgeier",ARI,"41","57","45.3","4.0","+3"
+"45",6,"Josh Jacobs",GB,"16","75","45.5","11.8","-19"
+"46",6,"Tyjae Spears",TEN,"40","57","47.6","4.6","+9"
+"47",6,"Keaton Mitchell",LAC,"40","61","48.9","4.2","+9"
+"48",6,"Zach Charbonnet",SEA,"41","58","49.3","4.0","+1"
+"49",6,"Mike Washington Jr.",LV,"40","62","49.7","5.3","-8"
+"50",6,"Dylan Sampson",CLE,"43","60","49.9","3.8","+11"
+"51",6,"Jonah Coleman",DEN,"42","68","48.6","5.7","-5"
+"52",7,"Brian Robinson Jr.",ATL,"45","58","53.1","3.7","-4"
+"53",7,"Tank Bigsby",PHI,"46","61","53.6","4.1","-3"
+"54",7,"Alvin Kamara",NO,"40","71","55.4","7.2","-3"
+"55",7,"Tyrone Tracy Jr.",NYG,"41","73","55.6","8.2","-3"
+"56",7,"Braelon Allen",NYJ,"41","71","55.6","6.0","+2"
+"57",7,"Emmett Johnson",KC,"47","79","55.9","6.4","-3"
+"58",7,"Ray Davis",BUF,"52","69","59.5","4.5","-1"
+"59",7,"Isiah Pacheco",DET,"49","95","62.0","10.9","0"
+"60",7,"Kimani Vidal",LAC,"52","83","62.3","5.7","+5"
+"61",7,"Sean Tucker",TB,"61","81","65.9","6.0","+8"
+"62",7,"Kaelon Black",SF,"49","97","64.3","10.2","-9"
+"63",7,"Nicholas Singleton",TEN,"55","85","65.0","7.1","+1"
+"64",7,"Najee Harris",NYG,"56","88","67.6","7.5","+9"
+"65",7,"Malik Davis",DAL,"50","92","67.0","11.8","+6"
+"66",7,"Kaytron Allen",WAS,"54","90","67.3","7.0","+1"
+"67",8,"Jaylen Wright",MIA,"59","86","69.7","6.5","-1"
+"68",8,"James Conner",ARI,"55","91","71.9","8.9","-8"
+"69",8,"Justice Hill",BAL,"52","91","70.0","10.3","-6"
+"70",8,"George Holani",SEA,"59","89","70.2","7.7","+2"
+"71",8,"Emanuel Wilson",SEA,"60","93","72.2","9.0","+8"
+"72",8,"Kaleb Johnson",GB,"51","86","70.3","8.2","-10"
+"73",8,"Samaje Perine",CIN,"55","94","72.4","9.4","+13"
+"74",8,"Ollie Gordon II",MIA,"63","89","75.4","6.5","+16"
+"75",8,"Chris Brooks",GB,"55","92","73.7","9.1","0"
+"76",8,"Demond Claiborne",MIN,"59","96","72.2","7.6","0"
+"77",8,"Kendre Miller",NO,"56","92","77.9","8.1","-"
+"78",8,"Ty Johnson",BUF,"62","102","78.6","7.5","+7"
+"79",8,"LeQuint Allen Jr.",JAC,"71","101","80.4","6.1","+12"
+"80",8,"Isaiah Davis",NYJ,"65","87","77.9","5.8","-"
+"81",8,"Jordan James",SF,"61","98","77.3","8.6","-13"
+"82",8,"Seth McGowan",IND,"60","101","77.1","9.3","-1"
+"83",8,"DJ Giddens",IND,"74","94","83.2","5.3","-"
+"84",8,"Brashard Smith",KC,"70","104","83.2","7.3","-"
+"85",8,"Adam Randall",BAL,"69","105","83.5","7.5","-"
+"86",8,"Devin Singletary",NYG,"77","119","88.7","7.7","-9"
+"87",8,"Emari Demercado",DAL,"73","101","86.8","5.4","+1"
+"88",9,"Tahj Brooks",CIN,"80","100","91.5","4.1","-"
+"89",9,"Trevor Etienne",CAR,"82","100","91.5","4.5","-"
+"90",9,"Jaydon Blue",PHI,"63","113","80.6","13.3","-16"
+"91",9,"Devin Neal",FA,"66","108","83.6","9.3","-"
+"92",9,"Trey Benson",ARI,"71","106","86.5","8.3","-9"
+"93",9,"Isaac Guerendo",SF,"73","162","95.0","15.9","-"
+"94",9,"Will Shipley",PHI,"77","132","96.2","9.1","-"
+"95",9,"Audric Estime",NO,"75","144","94.7","11.9","-"
+"96",9,"Jerome Ford",WAS,"73","109","90.8","8.7","-"
+"97",9,"Jarquez Hunter",FA,"72","166","97.2","17.1","-"
+"98",9,"Jaleel McLaughlin",CLE,"74","164","96.0","17.4","-"
+"99",9,"Kareem Hunt",FA,"81","114","95.9","7.5","-"
+"100",9,"Jacob Saylors",DET,"64","103","83.5","12.7","-16"
+"101",9,"Bam Knight",ARI,"80","104","94.9","5.9","-"
+"102",9,"Roschon Johnson",CHI,"77","126","94.9","13.3","-"
+"103",10,"Raheim Sanders",CLE,"83","106","94.9","7.5","-"
+"104",10,"Joe Mixon",FA,"84","111","96.8","8.7","-"
+"105",10,"Eli Heidenreich",PIT,"85","111","95.7","9.9","-"
+"106",10,"Sione Vaki",DET,"84","116","96.4","9.5","-"
+"107",10,"Rasheen Ali",BAL,"84","117","100.2","9.0","-"
+"108",10,"Michael Carter",TEN,"94","175","110.5","25.1","-"
+"109",10,"Kyle Juszczyk",SF,"85","112","99.5","8.9","-"
+"110",10,"Dylan Laube",LV,"96","141","108.2","15.4","-"
+"111",10,"Hunter Luepke",DAL,"80","120","105.2","14.4","-"
+"112",10,"Jawhar Jordan",HOU,"99","111","105.2","5.2","-"
+"113",10,"Corey Kiner",NE,"77","117","97.8","14.7","-"
+"114",10,"Austin Ekeler",FA,"92","145","107.4","19.1","-44"
+"115",10,"Jeremy McNichols",WAS,"102","128","111.0","9.6","-"
+"116",10,"Ameer Abdullah",JAC,"97","135","112.0","13.1","-"
+"117",10,"Ronnie Rivers",LAR,"102","131","112.4","10.4","-"
+"118",10,"Antonio Williams",FA,"78","81","79.5","1.5","-"
+"119",10,"Jam Miller",FA,"83","108","99.7","11.8","-"
+"120",10,"Tyler Badie",DEN,"106","183","124.6","29.4","-"
+"121",10,"J'Mari Taylor",JAC,"95","114","101.7","8.7","-"
+"122",10,"Tyler Goodson",ATL,"99","122","110.8","9.9","-"
+"123",10,"Dameon Pierce",PHI,"94","152","114.5","23.3","-"
+"124",10,"Julius Chestnut",TEN,"106","138","118.4","12.1","-"
+"125",10,"AJ Dillon",CAR,"98","142","116.8","16.8","-"
+"126",10,"Phil Mafah",FA,"100","133","117.5","12.3","-"
+"127",10,"Damien Martinez",FA,"89","153","116.3","26.9","-"
+"128",10,"Kene Nwangwu",NYJ,"111","132","118.3","8.4","-"
+"129",10,"Pierre Strong Jr.",GB,"96","178","129.5","31.1","-"
+"130",10,"Reggie Gilliam",NE,"110","122","114.7","5.3","-"
+"131",11,"Antonio Gibson",FA,"97","113","105.0","8.0","-"
+"132",11,"Alec Ingold",LAC,"113","121","116.3","3.4","-"
+"133",11,"Jermar Jefferson",MIN,"98","115","106.5","8.5","-"
+"134",11,"Josh Williams",TB,"98","123","110.5","12.5","-"
+"135",11,"Patrick Ricard",NYG,"114","136","125.5","10.1","-"
+"136",11,"Jaydn Ott",KC,"101","129","115.0","14.0","-"
+"137",11,"Zamir White",NO,"98","185","138.7","35.7","-"
+"138",11,"Brittain Brown",CHI,"109","131","120.0","11.0","-"
+"139",11,"Max Bredeson",MIN,"113","130","121.5","8.5","-"
+"140",11,"Lew Nichols III",PIT,"110","174","142.0","32.0","-"
+"141",11,"Zavier Scott",CHI,"123","126","124.5","1.5","-"
+"142",11,"Raheem Mostert",LV,"111","180","145.5","34.5","-"
+"143",12,"Kalel Mullings",TEN,"128","169","148.5","20.5","-"
